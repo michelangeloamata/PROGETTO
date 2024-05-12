@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --background-dark: #222222;
+  --background-med: #252525;
+  --background-light: #444444;
+  --forground: #CCCCCC;
+  --shadow: #676767;
+  --text: #eeeeee;
+}
+
+body {
+  background-color: var(--background-dark);
+  color: var(--text);
+  font-family: Afacad, sans-serif;
+}

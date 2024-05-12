@@ -1,0 +1,83 @@
+@import './base.css';
+
+.game_board {
+  border: 1px solid var(--forground);
+  width: fit-content;
+}
+
+.game_row {
+  display: flex;
+}
+
+.game_row button {
+  width: 10rem;
+  max-width: 10rem;
+  height: 10rem;
+  max-height: 10rem;
+  border: 1px dashed black;
+  background-color: var(--text);
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 3em;
+  color: var(--background-med);
+  cursor: pointer;
+  outline: inherit;
+}
+
+.game_row button:hover {
+  background-color: var(--background-light);
+  color: var(--text);
+}
+.game_row button:disabled {
+  background-color: var(--forground);
+  color: var(--background-med);
+}
+
+header, main {
+    display: grid;
+    justify-content: center;
+}
+
+.reset_button {
+  min-width: 30rem;
+  border: 3px solid var(--text);
+  background-color: var(--text);
+  padding: 0.5rem 0;
+  margin: 0.5rem 0 0 0;
+  font: inherit;
+  font-size: 1.5em;
+  color: #252525;
+  cursor: pointer;
+  outline: 0;
+}
+.reset_button:hover {
+  color: #CCCCCC;
+  background-color: var(--background-med);
+  box-shadow: 5px 5px var(--text);
+  text-decoration: 2px underline;
+}
+
+.no_left {
+  border-left: 1px solid var(--forground) !important;
+}
+.no_right {
+  border-right: 1px solid var(--forground) !important;
+}
+.no_top {
+  border-top: 1px solid var(--forground) !important;
+}
+.no_bottom {
+  border-bottom: 1px solid var(--forground) !important;
+}
+
+.winner_winner {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+.winner_winner p {
+  border-bottom: 4px solid var(--forground);
+  border-top: 4px solid var(--forground);
+}
